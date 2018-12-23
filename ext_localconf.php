@@ -11,7 +11,7 @@ if (!function_exists('register_client')) {
             return;
         }
 
-        if (!\TYPO3\CMS\Core\Core\Bootstrap::usesComposerClassLoading()) {
+        if (!\TYPO3\CMS\Core\Core\Environment::isComposerMode()) {
             $autoloadFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('sentry_client') . 'vendor/autoload.php';
             require_once($autoloadFile);
             \Raven_Autoloader::register();
