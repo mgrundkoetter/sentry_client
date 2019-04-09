@@ -1,4 +1,4 @@
-# Sentry Client for TYPO3
+# Sentry Client for TYPO3 Test123
 
 Exception logging with sentry, see http://www.getsentry.com
 
